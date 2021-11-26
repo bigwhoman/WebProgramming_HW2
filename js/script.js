@@ -17,3 +17,4 @@ let randomColor = () => {
 document.getElementById("clickMe").onclick = function(){
    changeGrad();
 }
+

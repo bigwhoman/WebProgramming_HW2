@@ -148,7 +148,170 @@
         </div>
     </div>
 </section>
+<section class="activities  pt-5 mt-5">
+    <div class="row mt-5">
+        <div class="col-md abc">
+            <div class="images" id="id1">
+                <img class="image" alt="bs" src="https://unsplash.it/400/425/?random">
+                <img class="image" alt="bs" src="https://unsplash.it/400/426/?random">
+                <img class="image" alt="bs" src="https://unsplash.it/400/427/?random">
+                <img class="image" alt="bs" src="https://unsplash.it/400/428/?random">
+                <img class="image" alt="bs" src="https://unsplash.it/400/429/?random">
+            </div>
+        </div>
+        <div class="col-md-5 abc">
+            <h1>lolo</h1>
+        </div>
+    </div>
+    <div class="row pt-5 mt-5">
+        <div class="col-md-auto abc" style="margin-left:15rem">
+        <h1>lolo</h1>
+            <p>this is a paragraph</p>
+        </div>
+        <div class="col-md abc">
+            <div class="images" id="id2">
+                <img class="image" alt="bs" src="https://unsplash.it/400/425/?random">
+                <img class="image" alt="bs" src="https://unsplash.it/400/415/?random">
+                <img class="image" alt="bs" src="https://unsplash.it/400/435/?random">
+                <img class="image" alt="bs" src="https://unsplash.it/400/455/?random">
+                <img class="image" alt="bs" src="https://unsplash.it/400/475/?random">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<script>(function() {
+    let cssTransition, imageOffset, imageWidth, images, queue, timeout, touch;
+
+    cssTransition = function() {
+        let body, i, len, style, vendor, vendors;
+        body = document.body || document.documentElement;
+        style = body.style;
+        vendors = ['Moz', 'Webkit', 'O'];
+        if (typeof style['transition'] === 'string') {
+            return true;
+        }
+        for (i = 0, len = vendors.length; i < len; i++) {if (window.CP.shouldStopExecution(1)){break;}
+            vendor = vendors[i];
+            if (typeof style[vendor + 'Transition'] === 'string') {
+                return true;
+            }
+        }
+        window.CP.exitedLoop(1);
+
+        return false;
+    };
+
+    queue = false;
+
+    touch = document.documentElement['ontouchstart'] !== void 0;
+
+    images = document.getElementById("id1");
+
+    imageWidth = images.firstElementChild.offsetWidth;
+
+    imageOffset = images.firstElementChild.offsetLeft;
+
+    timeout = cssTransition() ? [300, 400] : [0, 0];
+
+    images.addEventListener((touch ? 'touchend' : 'click'), function(event) {
+        let direction, lastClassList;
+        if (queue) {
+            return;
+        }
+        queue = true;
+        if (((touch ? event.changedTouches[0].pageX : event.pageX) - imageOffset) > imageWidth / 2) {
+            direction = 'slide-right';
+        } else {
+            direction = 'slide-left';
+        }
+        lastClassList = images.lastElementChild.classList;
+        lastClassList.add(direction);
+        return setTimeout(function() {
+            lastClassList.remove(direction);
+            lastClassList.add('back');
+            return setTimeout(function() {
+                images.insertBefore(images.lastElementChild, images.firstElementChild);
+                lastClassList.remove('back');
+                return queue = false;
+            }, timeout[0]);
+        }, timeout[1]);
+    }, false);
+
+}).call(this);
+
+
+
+(function() {
+    let cssTransition, imageOffset, imageWidth, images, queue, timeout, touch;
+
+    cssTransition = function() {
+        let body, i, len, style, vendor, vendors;
+        body = document.body || document.documentElement;
+        style = body.style;
+        vendors = ['Moz', 'Webkit', 'O'];
+        if (typeof style['transition'] === 'string') {
+            return true;
+        }
+        for (i = 0, len = vendors.length; i < len; i++) {if (window.CP.shouldStopExecution(1)){break;}
+            vendor = vendors[i];
+            if (typeof style[vendor + 'Transition'] === 'string') {
+                return true;
+            }
+        }
+        window.CP.exitedLoop(1);
+
+        return false;
+    };
+
+    queue = false;
+
+    touch = document.documentElement['ontouchstart'] !== void 0;
+
+    images = document.getElementById("id2");
+
+    imageWidth = images.firstElementChild.offsetWidth;
+
+    imageOffset = images.firstElementChild.offsetLeft;
+
+    timeout = cssTransition() ? [300, 400] : [0, 0];
+
+    images.addEventListener((touch ? 'touchend' : 'click'), function(event) {
+        let direction, lastClassList;
+        if (queue) {
+            return;
+        }
+        queue = true;
+        if (((touch ? event.changedTouches[0].pageX : event.pageX) - imageOffset) > imageWidth / 2) {
+            direction = 'slide-right';
+        } else {
+            direction = 'slide-left';
+        }
+        lastClassList = images.lastElementChild.classList;
+        lastClassList.add(direction);
+        return setTimeout(function() {
+            lastClassList.remove(direction);
+            lastClassList.add('back');
+            return setTimeout(function() {
+                images.insertBefore(images.lastElementChild, images.firstElementChild);
+                lastClassList.remove('back');
+                return queue = false;
+            }, timeout[0]);
+        }, timeout[1]);
+    }, false);
+
+}).call(this);
+</script>
 <script src="js/bootstrap.js"></script>
 <script src="js/script.js"></script>
+
 </body>
 </html>
