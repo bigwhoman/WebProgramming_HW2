@@ -257,3 +257,24 @@ ul li:before {
 
 .image.back { z-index: 1; }
 
+.activities{
+    background-color: #9a9393;
+}
+
+.contactUs{
+    height:25rem;
+    margin-top: 7rem;
+    background-color: #000;
+}
+.contactUs h1{
+    padding-top: 20px;
+    font-weight:bold;
+    color: #fff;
+}
+h1.secondH1{
+    color: #b27e1c;
+}
+.contactUs h1:hover{
+    padding-top:25px;
+   transform:scale(1.2);
+}
