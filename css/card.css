@@ -1,7 +1,14 @@
 .row{
-    direction: rtl;
+    direction: rtl; 
+    gap: 5rem;
+}
+.cards {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
 }
 .card{
+    justify-content: center;
     font-family: "vazir";
 }
 .sub-text-header{
@@ -30,9 +37,9 @@
     transform: rotate(270deg);
 }
 .card{
-    width: 320px;
-    margin-top: 30px;
-    margin-right: 100px;
+    width: 21rem;
+    margin-top: 1rem;
+    margin-right: 20%;
     padding: 0px;
     border: none;
 }
@@ -44,6 +51,10 @@
     border-color: #fbbb3a;
     width: 80%;
     height: 50px;
+}
+.btn:hover{
+    border-color: #fbbb3a;
+    background-color: rgb(219, 219, 219);
 }
 .card-body{
     background-color: #f8f8f8;
