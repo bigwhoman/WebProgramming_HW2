@@ -1,0 +1,60 @@
+.row{
+    direction: rtl;
+}
+.card{
+    font-family: "vazir";
+}
+.sub-text-header{
+    font-size: 12px;
+    margin-bottom: 0%;
+}
+.p-3{
+    padding: 0 !important;
+}
+.list-group-item{
+    background: transparent;
+    border: none;
+    padding-left: 0;
+    padding-top: 8%;
+    padding-bottom: 15px;
+}
+.badge{
+    margin-top: 18px;
+    margin-right: 240px;
+    top:  0;
+    background-color: #b52b48;
+    position: absolute;
+    border-radius: 0;
+    width: 70px;
+    font-size: 20px;
+    transform: rotate(270deg);
+}
+.card{
+    width: 320px;
+    margin-top: 30px;
+    margin-right: 100px;
+    padding: 0px;
+    border: none;
+}
+.btn{
+    background: transparent;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    border-width: 3px;
+    border-color: #fbbb3a;
+    width: 80%;
+    height: 50px;
+}
+.card-body{
+    background-color: #f8f8f8;
+    padding-top: 0;
+}
+
+.card-header {
+    width: 100%;
+    margin: 0;
+}
+.list-group{
+    margin-bottom: 15px;
+    padding: 0;
+}
