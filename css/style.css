@@ -134,9 +134,6 @@ ul {
     list-style: none;
 }
 
-ul li:before {
-    content: '✓';
-}
 .cheader{
     background-color: #0a53be;
     color: #fff;
