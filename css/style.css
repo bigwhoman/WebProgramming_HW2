@@ -339,30 +339,26 @@ bg-darkblue {
     margin-right: 10px;
 }
 
+
 #newsletter-form{
     border-radius: 20px;
-    position: absolute;
-    margin-right: 20%;
-    margin-top: 2%;
+    position: relative;
     background-color: #43338a;
-    padding-top: 0;
-    padding-right: 0px;
     height: 120px;
     width: 800px;
 }
 
+
 #footer-container{
     position: relative;
     border-radius: 20px;
-
 }
 
 #footer-first-item{
-    
     position: absolute;
     left: 0;
     background-color: white;
-    height:90px;
+    height:92px;
 }
 
 #footer-second-item{
