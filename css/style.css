@@ -97,9 +97,9 @@ body{
 .hovereffect p.info {
     display: inline-block;
     text-decoration: none;
-    padding: 7px 14px;
+    padding: 3px 14px;
     border: 1px solid #fff;
-    margin: 50px 0 0 0;
+    margin: 13px 0 0 0;
     background-color: transparent;
 }
 
@@ -125,10 +125,6 @@ body{
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-}
-.picc{
-    height:200px;
-    width:350px;
 }
 ul {
     list-style: none;
@@ -175,67 +171,36 @@ ul {
     transition: transform 0.3s ease-in-out;
 }
 
-.image:first-child {
-    -moz-transform: rotate(8deg);
-    -ms-transform: rotate(8deg);
-    -webkit-transform: rotate(8deg);
-    transform: rotate(8deg);
-}
-
 .image:nth-child(2) {
-    -moz-transform: rotate(2deg);
-    -ms-transform: rotate(2deg);
-    -webkit-transform: rotate(2deg);
-    transform: rotate(2deg);
+    transform:translateX(3px) translateY(3px);
 }
 
 .image:nth-child(3) {
-    -moz-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    -webkit-transform: rotate(-3deg);
-    transform: rotate(-3deg);
+    transform:translateX(6px) translateY(6px);
 }
 
 .image:nth-child(4) {
-    -moz-transform: rotate(-10deg);
-    -ms-transform: rotate(-10deg);
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg);
+    transform:translateX(9px) translateY(9px);
 }
 
 .image:last-child {
-    -moz-transform: rotate(-5deg);
-    -ms-transform: rotate(-5deg);
-    -webkit-transform: rotate(-5deg);
-    transform: rotate(-5deg);
+    transform:translateX(12px) translateY(12px);
 }
 
 .images:hover .image:nth-child(4) {
-    -moz-transform: rotate(10deg) translateX(50px);
-    -ms-transform: rotate(10deg) translateX(50px);
-    -webkit-transform: rotate(10deg) translateX(50px);
-    transform: rotate(10deg) translateX(50px);
+    transform:translateX(-5px) translateY(-5px);
 }
 
 .images:hover .image:nth-child(3) {
-    -moz-transform: rotate(3deg) translateX(75px);
-    -ms-transform: rotate(3deg) translateX(75px);
-    -webkit-transform: rotate(3deg) translateX(75px);
-    transform: rotate(3deg) translateX(75px);
+    transform:translateX(-20px) translateY(-20px);
 }
 
 .images:hover .image:nth-child(2) {
-    -moz-transform: rotate(-2deg) translateX(-50px);
-    -ms-transform: rotate(-2deg) translateX(-50px);
-    -webkit-transform: rotate(-2deg) translateX(-50px);
-    transform: rotate(-2deg) translateX(-50px);
+    transform:translateX(-35px) translateY(-35px);
 }
 
 .images:hover .image:first-child {
-    -moz-transform: rotate(-8deg) translateX(-75px) translateY(-10px);
-    -ms-transform: rotate(-8deg) translateX(-75px) translateY(-10px);
-    -webkit-transform: rotate(-8deg) translateX(-75px) translateY(-10px);
-    transform: rotate(-8deg) translateX(-75px) translateY(-10px);
+    transform:translateX(-40px) translateY(-40px);
 }
 
 .image.slide-right {
@@ -253,6 +218,10 @@ ul {
 }
 
 .image.back { z-index: 1; }
+
+.picc{
+    width: 100%;
+}
 
 .activities{
     background-color: #9a9393;

@@ -56,7 +56,7 @@
     <section class="cards">
         <div class="row row-cols-4">
             <div class="col">
-                <div class="card shadow mb-5 p-3 bg-body rounded">
+                <div class="card shadow mb-5 p-3 bg-body rounded-3">
                     <div class="card-header" style="background-color: #667ffe;">
                         لورم
                         <br>
@@ -133,50 +133,50 @@
     <section class="gallery">
         <div class="container-fluid" style="padding:0">
             <div class="row justify-content-evenly" style="padding:1rem">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="col-md col-xs-12">
                     <div class="hovereffect">
-                        <img class="img-responsive picc" src="img/mot.jpg" alt="">
+                        <img class="img picc" src="img/mot.jpg" alt="">
                         <div class="overlay">
                             <h2>mot1</h2>
-                            <p class="info">this is a mot</p>
+                            <p class="info">این یه موتوره</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="col-md col-xs-12">
                     <div class="hovereffect">
-                        <img class="img-responsive picc" src="img/mot.jpg" alt="">
+                        <img class="img picc" src="img/mot.jpg" alt="">
                         <div class="overlay">
                             <h2>mot2</h2>
-                            <p class="info">this is a mot</p>
+                            <p class="info">شاید سوال شه</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="col-md col-xs-12">
                     <div class="hovereffect">
-                        <img class="img-responsive picc" src="img/mot.jpg" alt="">
+                        <img class="img picc" src="img/mot.jpg" alt="">
                         <div class="overlay">
                             <h2>mot3</h2>
-                            <p class="info">this is a mot</p>
+                            <p class="info">که چرا اینجاست</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-evenly" style="padding:0.5rem;margin:0">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="col-md col-xs-12">
                     <div class="hovereffect">
-                        <img class="img-responsive picc" src="img/mot.jpg" alt="">
+                        <img class="img picc" src="img/mot.jpg" alt="">
                         <div class="overlay">
                             <h2>Mot 4</h2>
-                            <p class="info">this is a mot</p>
+                            <p class="info">باید بگم</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="col-md col-xs-12">
                     <div class="hovereffect">
                         <img class="img-responsive picc" src="img/mot.jpg" alt="">
                         <div class="overlay">
                             <h2>Mot 5</h2>
-                            <p class="info">this is a mot and its beutiful la la la</p>
+                            <p class="info">حودمونم نمیدونیم</p>
                         </div>
                     </div>
                 </div>
@@ -314,6 +314,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <section class="home-newsletter">
@@ -416,7 +417,7 @@
 
             imageOffset = images.firstElementChild.offsetLeft;
 
-            timeout = cssTransition() ? [300, 400] : [0, 0];
+            timeout = cssTransition() ? [0, 0] : [0, 0];
 
             images.addEventListener((touch ? 'touchend' : 'click'), function (event) {
                 let direction, lastClassList;
@@ -479,7 +480,7 @@
 
             imageOffset = images.firstElementChild.offsetLeft;
 
-            timeout = cssTransition() ? [300, 400] : [0, 0];
+            timeout = cssTransition() ? [0, 0] : [0, 0];
 
             images.addEventListener((touch ? 'touchend' : 'click'), function (event) {
                 let direction, lastClassList;
