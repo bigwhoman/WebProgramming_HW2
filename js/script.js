@@ -52,3 +52,26 @@ btn.addEventListener("click", function () {
     localStorage.setItem("theme", theme);
 });
 
+function changeTelegram(){
+
+   let image = document.getElementById("telegram-icon");
+   image.onmouseover = () => { image.src = "./img/telegram-orange.png"; }
+   image.onmouseout = () => { image.src = "./img/telegram-black.png"; }
+
+}
+
+function changeInstagram(){
+
+   let image = document.getElementById("instagram-icon");
+   image.onmouseover = () => { image.src = "./img/instagram-orange.jpg"; }
+   image.onmouseout = () => { image.src = "./img/instagram-black.jpg"; }
+   
+}
+
+function changeWhatsapp(){
+
+   let image = document.getElementById("whatsapp-icon");
+   image.onmouseover = () => { image.src = "./img/whatsapp-orange.jpg"; }
+   image.onmouseout = () => { image.src = "./img/whatsapp-black.jpg"; }
+   
+}
