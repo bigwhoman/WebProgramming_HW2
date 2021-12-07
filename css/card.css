@@ -9,12 +9,16 @@
 
 .cards {
     display: flex;
+
     justify-content: center;
 }
 .card{ 
     justify-content: center;
     font-family: "vazir" ;
-    
+    width: 21rem;
+    margin-top: 1rem;
+    padding: 0px;
+    border: none;
 }
 .sub-text-header{
     font-size: 12px;
@@ -42,11 +46,7 @@
     transform: rotate(270deg);
 }
 .card{
-    width: 21rem;
-    margin-top: 1rem;
 
-    padding: 0px;
-    border: none;
 }
 .btn{
     background: transparent;
