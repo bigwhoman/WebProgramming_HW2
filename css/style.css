@@ -223,10 +223,6 @@ ul {
     width: 100%;
 }
 
-.activities{
-    background-color: #9a9393;
-}
-
 .contactUs{
     height:25rem;
     margin-top: 7rem;
@@ -387,10 +383,15 @@ body.dark-theme {
         --bkg-color: #fff;
     }
 }
-
-* {
+#upPath{
+    fill:var(--bkg-color);
 }
-
+#activities{
+    fill:var(--bkg-color);
+}
+#toOfCon{
+    fill:var(--bkg-color);
+}
 body {
     background: var(--bkg-color);
 }
