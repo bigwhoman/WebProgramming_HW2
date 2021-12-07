@@ -393,6 +393,9 @@ body.dark-theme {
 #toOfCon{
     fill:var(--bkg-color);
 }
+#footer-first-item{
+    background-color:var(--bkg-color);
+}
 body {
     background: var(--bkg-color);
 }
