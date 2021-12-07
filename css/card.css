@@ -1,15 +1,20 @@
 .row{
-    direction: rtl; 
-    gap: 5rem;
+    direction: rtl;    
 }
+
+.col{
+    display: flex;
+    justify-content: center;
+}
+
 .cards {
     display: flex;
-    justify-items: center;
     justify-content: center;
 }
-.card{
+.card{ 
     justify-content: center;
-    font-family: "vazir";
+    font-family: "vazir" ;
+    
 }
 .sub-text-header{
     font-size: 12px;
@@ -39,7 +44,7 @@
 .card{
     width: 21rem;
     margin-top: 1rem;
-    margin-right: 20%;
+
     padding: 0px;
     border: none;
 }
