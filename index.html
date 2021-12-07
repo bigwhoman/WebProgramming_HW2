@@ -188,10 +188,10 @@
             </div>
         </div>
     </section>
-    <section class="activities pt-5 mt-5" id="activities">
+    <section class="activities pt-5 mt-5" id="activities" style="background-color: #fff">
         <div class="container-fluid">
             <div class="card coord" style="width: 80%; margin-left: 20%">
-                <div class="card-body">
+                <div class="card-body"  style="background-color:#fff">
                     <div class="row mt-5">
                         <div class="col-md abc">
                             <div class="images" id="id1">
@@ -209,8 +209,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card coord" style="width: 80%">
-                <div class="card-body">
+            <div class="card coord" style="width: 80%;">
+                <div class="card-body" style="background-color:#fff">
                     <div class="row pt-5 mt-5">
                         <div class="col-md-auto abc" style="margin-right: 3%;">
                             <h1>لورم‌ایپسوم</h1>
@@ -238,9 +238,9 @@
        
             <div class="row align-items-center justify-content-center contact-us-text">
                 <div class="col-md-auto"> 
-                    <img src="./img/telegram-black.png" style="width:100px;height:100px">
-                    <img src="./img/whatsapp-black.jpg" style="width:100px;height:100px">
-                    <img src="./img/instagram-black.jpg" style="width:120px;height:120px">
+                    <img id="telegram-icon" onmouseover="changeTelegram()" src="./img/telegram-black.png" style="width:100px;height:100px">
+                    <img id="whatsapp-icon" onmouseover="changeWhatsapp()" src="./img/whatsapp-black.jpg" style="width:100px;height:100px">
+                    <img id="instagram-icon" onmouseover="changeInstagram()" src="./img/instagram-black.jpg" style="width:120px;height:120px">
                     </div>
                 <div class="col-md-auto">
                     <h1>با ما</h1>
@@ -387,6 +387,9 @@
 
 
     <script>
+
+
+        // END
 
         (function () {
             let cssTransition, imageOffset, imageWidth, images, queue, timeout, touch;
