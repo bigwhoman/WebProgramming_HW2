@@ -4,6 +4,9 @@ body{
     height:100%;
     font-size:1rem;
 }
+.nav-link{
+    white-space: nowrap;
+}
 .gradient {
     background: linear-gradient(268deg, #971944, #333fa2);
     background-size: 400% 400%;
