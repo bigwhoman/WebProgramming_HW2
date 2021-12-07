@@ -28,20 +28,24 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav align-items-end">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Features</a>
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link active" aria-current="page" href="#">برو بالا</a>
+                    <a class="nav-link active" aria-current="page" href="#cards">کارت ها</a>
+                    <a class="nav-link active" aria-current="page" href="#gallery">گالری</a>
+                    <a class="nav-link active" aria-current="page" href="#activities">اکتیویتی</a>
+                    <a class="nav-link active" aria-current="page" href="#contactUs">ارتباط با ما</a>
+                    <a class="nav-link active" aria-current="page" href="#call-to-action">نظرات</a>
+                    <button type="button" id="darkMode" class="btn btnn">دارک مود</button>
                 </div>
             </div>
         </div>
     </nav>
-    <header id="headerG" class="page-header gradient">
+    <header id="headerG" class="page-header gradient" style="margin-top:60px">
         <div class="container pt-3">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-5">
-                    <h2>My website which I have built</h2>
-                    <p>see it and enjoy your coffee</p>
-                    <button type="button" id="clickMe" class="btn btn-outline-success bg-dark">Success</button>
+                    <h2>با کاری نکردن کاری انجام نمی شود</h2>
+                    <p>بیل گیتس</p>
+                    <button type="button" id="clickMe" class="btn btn-outline-success bg-dark">تعویض رنگ</button>
                 </div>
                 <div class="col-md-5"><img src="img/email_campaign_monochromatic.svg" style="opacity:0.5"
                         alt="header image"></div>
@@ -53,7 +57,7 @@
             </path>
         </svg>
     </header>
-    <section class="cards">
+    <section class="cards" id="cards">
         <div class="row row-cols-4">
             <div class="col">
                 <div class="card shadow mb-5 p-3 bg-body rounded-3">
@@ -130,7 +134,7 @@
             <!-- -->
         </div>
     </section>
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <div class="container-fluid" style="padding:0">
             <div class="row justify-content-evenly" style="padding:1rem">
                 <div class="col-md col-xs-12">
@@ -183,9 +187,9 @@
             </div>
         </div>
     </section>
-    <section class="activities pt-5 mt-5">
+    <section class="activities pt-5 mt-5" id="activities">
         <div class="container-fluid">
-            <div class="card" style="width: 80%; margin-left: 20%">
+            <div class="card coord" style="width: 80%; margin-left: 20%">
                 <div class="card-body">
                     <div class="row mt-5">
                         <div class="col-md abc">
@@ -204,7 +208,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card" style="width: 80% ">
+            <div class="card coord" style="width: 80%">
                 <div class="card-body">
                     <div class="row pt-5 mt-5">
                         <div class="col-md-auto abc" style="margin-right: 3%;">
@@ -225,7 +229,7 @@
             </div>
         </div>
     </section>
-    <section class="contactUs">
+    <section class="contactUs" id="contactUs">
         <div class="container-fluid">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 1">
                 <path d="M 0 0 L 7 1 L 14 0" fill="#fff" />
@@ -253,7 +257,7 @@
     </svg>
 
 
-    <section class="call-to-action bg-darkblue mt-5" style="background-color:black;">
+    <section class="call-to-action bg-darkblue mt-5" id="call-to-action" style="background-color:black;">
         <div class="title_comments" style="font-family: sans-serif;text-align: center; color:white"><h1>نظرات مشتریان </h1></div>
         <div class="container">
             <div class="row">
@@ -324,7 +328,7 @@
         </div>
     </section>
 
-    <section class="home-newsletter" dir="rtl">
+    <section class="home-newsletter" id="home-newsletter" dir="rtl">
 
         <div class="container" id="footer-container" style="background-color: black;height: 300px;">
             <div class="container" id="footer-first-item"> </div>

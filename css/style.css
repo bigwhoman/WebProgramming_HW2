@@ -141,7 +141,7 @@ ul {
     background-color: #be0a25;
     transition: 0.5s ease;
 }
-.card:hover{
+.card:hover:not(.coord){
     transform: scale(1.1);
     transition: 0.5s ease;
 }
@@ -339,4 +339,25 @@ bg-darkblue {
     z-index: 1;
     margin-top: -19px;
     margin-right: 5px;
+}
+.navbar a{
+    padding: 10px;
+}
+.navbar a:hover{
+    font-weight: bold;
+    transform:scale(1.2);
+}
+.btnn{
+    outline: none;
+    color: #fff;
+}
+.btnn:hover{
+    outline: none;
+    color: #000;
+    font-weight: bold;
+    transform:scale(1.05);
+    background-color: black;
+}
+.cards li:hover{
+    font-weight: bold;
 }
