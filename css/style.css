@@ -337,8 +337,7 @@ bg-darkblue {
 }
 .col-md-auto{
     z-index: 1;
-    margin-top: -19px;
-    margin-right: 5px;
+
 }
 .navbar a{
     padding: 10px;
@@ -360,4 +359,9 @@ bg-darkblue {
 }
 .cards li:hover{
     font-weight: bold;
+}
+
+.col-md-auto > img {
+    position: relative;
+    display: block;
 }
