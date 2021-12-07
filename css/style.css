@@ -365,3 +365,37 @@ bg-darkblue {
     position: relative;
     display: block;
 }
+
+
+body {
+    --text-color: #000;
+    --bkg-color: #fff;
+}
+body.dark-theme {
+    --text-color: #eee;
+    --bkg-color: #121212;
+}
+
+@media (prefers-color-scheme: dark) {
+    /* defaults to dark theme */
+    body {
+        --text-color: #eee;
+        --bkg-color: #121212;
+    }
+    body.light-theme {
+        --text-color: #222;
+        --bkg-color: #fff;
+    }
+}
+
+* {
+}
+
+body {
+    background: var(--bkg-color);
+}
+
+h1,
+p,h2{
+    color: var(--text-color);
+}
